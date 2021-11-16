@@ -8,11 +8,11 @@ beforeEach(async () => {
 })
 
 const generatedToken = "plain-token"
-jest.mock("blitz", () => ({
-  ...jest.requireActual<Record<string, unknown>>("blitz")!,
-  generateToken: () => generatedToken,
-}))
-jest.mock("preview-email", () => jest.fn())
+// jest.mock("blitz", () => ({
+//   ...jest.requireActual<Record<string, unknown>>("blitz")!,
+//   generateToken: () => generatedToken,
+// }))
+// jest.mock("preview-email", () => jest.fn())
 
 describe("forgotPassword mutation", () => {
   it("does not throw error if user doesn't exist", async () => {
