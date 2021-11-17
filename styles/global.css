@@ -1,0 +1,24 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply w-full text-gray-800 m-0 select-none;
+    -webkit-touch-callout: none;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply font-body text-gray-900 bg-gray-100;
+  }
+
+  *,
+  *:before,
+  *:after {
+    @apply box-border;
+  }
+}
